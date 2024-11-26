@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A156EBA-E77B-42E0-960D-0D2CB520EC02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BaiThucHanh.My.MyApplication</StartupObject>
+    <RootNamespace>BaiThucHanh</RootNamespace>
+    <AssemblyName>BaiThucHanh</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BaiThucHanh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BaiThucHanh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alice.Designer.vb">
+      <DependentUpon>alice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baitapnguphap.Designer.vb">
+      <DependentUpon>baitapnguphap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="baitapnguphap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dactamnhan.Designer.vb">
+      <DependentUpon>dactamnhan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dactamnhan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.vb">
+      <DependentUpon>DangNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhthuc.Designer.vb">
+      <DependentUpon>danhthuc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="danhthuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ditimlesong.Designer.vb">
+      <DependentUpon>ditimlesong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ditimlesong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dungluachonkhicontre.Designer.vb">
+      <DependentUpon>dungluachonkhicontre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dungluachonkhicontre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dungsaigon.Designer.vb">
+      <DependentUpon>dungsaigon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dungsaigon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="englishvocabulary.Designer.vb">
+      <DependentUpon>englishvocabulary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="englishvocabulary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gioithieutrangwed.Designer.vb">
+      <DependentUpon>gioithieutrangwed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gioithieutrangwed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grammarcam.Designer.vb">
+      <DependentUpon>grammarcam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grammarcam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grammarhong.Designer.vb">
+      <DependentUpon>grammarhong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grammarhong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grammarxanh.Designer.vb">
+      <DependentUpon>grammarxanh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grammarxanh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grammarxanhdo.Designer.vb">
+      <DependentUpon>grammarxanhdo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grammarxanhdo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grammarxanhduong.Designer.vb">
+      <DependentUpon>grammarxanhduong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grammarxanhduong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hanhtrinh.Designer.vb">
+      <DependentUpon>hanhtrinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hanhtrinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khurung.Designer.vb">
+      <DependentUpon>khurung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="khurung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lequang.Designer.vb">
+      <DependentUpon>lequang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lequang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ngoloi.Designer.vb">
+      <DependentUpon>ngoloi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ngoloi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nguoicon.Designer.vb">
+      <DependentUpon>nguoicon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nguoicon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfect.Designer.vb">
+      <DependentUpon>perfect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="perfect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuenMatKhau.Designer.vb">
+      <DependentUpon>QuenMatKhau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuenMatKhau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renkynangsong.Designer.vb">
+      <DependentUpon>renkynangsong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="renkynangsong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ruavatho.Designer.vb">
+      <DependentUpon>ruavatho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ruavatho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachkyNangSong.Designer.vb">
+      <DependentUpon>SachkyNangSong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SachkyNangSong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachNgoaiNgu.Designer.vb">
+      <DependentUpon>SachNgoaiNgu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SachNgoaiNgu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachThieuNhi.Designer.vb">
+      <DependentUpon>SachThieuNhi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SachThieuNhi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SachTieuThuyet.Designer.vb">
+      <DependentUpon>SachTieuThuyet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SachTieuThuyet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="songhieuqua.Designer.vb">
+      <DependentUpon>songhieuqua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="songhieuqua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suynghi.Designer.vb">
+      <DependentUpon>suynghi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suynghi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thanhthan.Designer.vb">
+      <DependentUpon>thanhthan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="thanhthan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.vb">
+      <DependentUpon>Gioithieuvb</DependentUpon>
+    </Compile>
+    <Compile Include="ThôngTin.Designer.vb">
+      <DependentUpon>ThôngTin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThôngTin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChu.Designer.vb">
+      <DependentUpon>TrangChu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tudien.Designer.vb">
+      <DependentUpon>tudien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tudien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tudiencam.Designer.vb">
+      <DependentUpon>tudiencam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tudiencam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tudiendo.Designer.vb">
+      <DependentUpon>tudiendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tudiendo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tuduy.Designer.vb">
+      <DependentUpon>tuduy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tuduy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tuoitho.Designer.vb">
+      <DependentUpon>tuoitho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tuoitho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tuoitre.Designer.vb">
+      <DependentUpon>tuoitre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tuoitre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tuvungtienganh.Designer.vb">
+      <DependentUpon>tuvungtienganh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tuvungtienganh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vitchivitem.Designer.vb">
+      <DependentUpon>vitchivitem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vitchivitem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ĐơnHàng.Designer.vb">
+      <DependentUpon>ĐơnHàng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ĐơnHàng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="Gioithieuvb">
+      <SubType>Form</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="alice.resx">
+      <DependentUpon>alice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baitapnguphap.resx">
+      <DependentUpon>baitapnguphap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dactamnhan.resx">
+      <DependentUpon>dactamnhan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhthuc.resx">
+      <DependentUpon>danhthuc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ditimlesong.resx">
+      <DependentUpon>ditimlesong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dungluachonkhicontre.resx">
+      <DependentUpon>dungluachonkhicontre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dungsaigon.resx">
+      <DependentUpon>dungsaigon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="englishvocabulary.resx">
+      <DependentUpon>englishvocabulary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gioithieutrangwed.resx">
+      <DependentUpon>gioithieutrangwed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grammarcam.resx">
+      <DependentUpon>grammarcam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grammarhong.resx">
+      <DependentUpon>grammarhong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grammarxanh.resx">
+      <DependentUpon>grammarxanh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grammarxanhdo.resx">
+      <DependentUpon>grammarxanhdo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grammarxanhduong.resx">
+      <DependentUpon>grammarxanhduong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanhtrinh.resx">
+      <DependentUpon>hanhtrinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="khurung.resx">
+      <DependentUpon>khurung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lequang.resx">
+      <DependentUpon>lequang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ngoloi.resx">
+      <DependentUpon>ngoloi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nguoicon.resx">
+      <DependentUpon>nguoicon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perfect.resx">
+      <DependentUpon>perfect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuenMatKhau.resx">
+      <DependentUpon>QuenMatKhau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renkynangsong.resx">
+      <DependentUpon>renkynangsong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ruavatho.resx">
+      <DependentUpon>ruavatho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachkyNangSong.resx">
+      <DependentUpon>SachkyNangSong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachNgoaiNgu.resx">
+      <DependentUpon>SachNgoaiNgu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachThieuNhi.resx">
+      <DependentUpon>SachThieuNhi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SachTieuThuyet.resx">
+      <DependentUpon>SachTieuThuyet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="songhieuqua.resx">
+      <DependentUpon>songhieuqua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suynghi.resx">
+      <DependentUpon>suynghi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thanhthan.resx">
+      <DependentUpon>thanhthan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>Gioithieuvb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThôngTin.resx">
+      <DependentUpon>ThôngTin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChu.resx">
+      <DependentUpon>TrangChu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tudien.resx">
+      <DependentUpon>tudien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tudiencam.resx">
+      <DependentUpon>tudiencam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tudiendo.resx">
+      <DependentUpon>tudiendo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuduy.resx">
+      <DependentUpon>tuduy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuoitho.resx">
+      <DependentUpon>tuoitho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuoitre.resx">
+      <DependentUpon>tuoitre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tuvungtienganh.resx">
+      <DependentUpon>tuvungtienganh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vitchivitem.resx">
+      <DependentUpon>vitchivitem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ĐơnHàng.resx">
+      <DependentUpon>ĐơnHàng.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiếu nhi 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu nhi 13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bai-tap-ngu-phap-tieng-anh-can-ban.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kns41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1212312312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh sale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh sale1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh người.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biểu tượng ảnh người.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh gif buồn trong đêm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh-gif-1-min.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuốn sách.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuốn sách1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
